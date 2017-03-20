@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+*{padding:0;margin:0;border:0;outline:0;font-family:"Open Sans";box-sizing:border-box;-webkit-text-size-adjust:none}._form{width:100%;display:block}._form .input-select,._form [type=checkbox],._form [type=checkbox]+span,._form [type=password],._form [type=radio],._form [type=radio]+span,._form [type=submit],._form [type=text]{display:block;height:50px;line-height:50px;color:#aaa}._form [type=password],._form [type=submit],._form [type=text]{padding:0 12.5px}._form [type=submit]{background:#5183ef;margin-top:25px;color:#fff;cursor:pointer}._form textarea{padding:12.5px;min-height:100px;resize:vertical;color:#aaa}._form label.input-check{float:left;margin:0 5px 5px 0;padding:0 12.5px;display:block}._form label.input-check:after,._form label.input-check:before{display:block;width:100%;clear:both;content:""}._form label.input-check [type=checkbox],._form label.input-check [type=radio]{margin-right:12.5px}._form label.input-select{border-radius:4px}._form label.input-select select{width:100%;height:50px;line-height:50px;text-indent:5px;position:relative;top:-2px;color:#aaa;background:0 0}._form label.input-check,._form label.input-select{cursor:pointer}._form fieldset:not(:first-of-type){margin-top:33.33px}._form legend{margin-bottom:10px}._form .input-select,._form [type=password],._form [type=text],._form textarea{border:2px solid #f5f5f5}._form [type=submit]{border:2px solid #5183ef}._form .input-select,._form .input-text,._form [type=checkbox]+span:before,._form [type=password],._form [type=submit],._form [type=text],._form textarea{border-radius:4px}._form [type=radio]+span:before{border-radius:50%}._form [type=checkbox],._form [type=radio]{display:none}._form [type=checkbox]+span:before,._form [type=radio]+span:before{position:relative;top:-1px;content:"";width:18px;height:18px;display:inline-block;vertical-align:middle;float:none;margin-right:12.5px;background:#f5f5f5}._form .input-select,._form [type=password],._form [type=text],._form textarea{background:#f5f5f5}._form [type=checkbox],._form [type=checkbox]+span,._form [type=password],._form [type=radio],._form [type=radio]+span,._form [type=submit],._form [type=text],._form fieldset,._form label,._form label input+span:before,._form legend,._form textarea{-webkit-transition-property:background-color,color,border;transition-property:background-color,color,border;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease;transition-timing-function:ease;-webkit-transition-delay:0s;transition-delay:0s}._form [type=submit]:hover{background:#d86618;border:2px solid #c45204}._form .input-select:hover,._form [type=password]:hover,._form [type=text]:hover,._form textarea:hover{background:#fafafa;border-color:#e1e1e1;color:#969696}._form .input-select:active,._form [type=password]:active,._form [type=text]:active,._form textarea:active{background:#fafafa;border-color:#cdcdcd;color:#828282}._form .input-select:focus,._form [type=password]:focus,._form [type=text]:focus,._form textarea:focus{background:#fafafa;border-color:#5183ef;color:#5183ef}._form [type=checkbox]:checked,._form [type=checkbox]:checked+span,._form [type=radio]:checked,._form [type=radio]:checked+span{color:#5183ef}._form [type=checkbox]:checked+span:before,._form [type=radio]:checked+span:before{background:#5183ef}._form label:hover [type=checkbox]:not(:checked)+span:before,._form label:hover [type=radio]:not(:checked)+span:before{background:#ebebeb}#form legend{color:#5183ef}h1{margin:auto;text-align:center;font-weight:300;margin-bottom:40px;color:#f9f300}#form{position:relative;background:#fff;max-width:600px;margin:auto;padding:25px;border-top:10px solid #5183ef;border-radius:4px;box-shadow:0 2px 1px rgba(0,0,0,.1)}#form *{font-size:14px}#form [type=password],#form [type=submit],#form [type=text],#form textarea{width:100%;display:block}#form legend{font-weight:600;font-size:12px;letter-spacing:1px}.container {
+  max-width: 750px;
+  padding: 15px;
+}
+
+ul {
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  list-style:none;
+}
+li {
+  padding:0;
+  margin:0;
+}
+nav {
+  text-align:center;
+  width:100%;
+  position:relative;
+  height:auto;
+  overflow:hidden;
+  background:none;
+}
+nav ul {
+  text-align:center;
+}
+nav ul li {
+  display:inline-block;
+}
+nav ul li a {
+  color:#f9f300;
+  display:inline-block;
+  padding:1em 3em;
+  text-decoration:none;
+  border-bottom:2px solid #fff;
+  transition-property:all .2s linear 0s;
+  -moz-transition:all .2s linear 0s;
+  -webkit-transition:all .2s linear 0s;
+  -o-transition:all .2s linear 0s;
+  font-size:16px;
+}
+nav ul li a:hover {
+  color: white;
+}
+button#facebook {
+    border-color: #2d5073;
+    background-color: #3b5998;
+    background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+}

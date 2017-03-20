@@ -1,0 +1,70 @@
+extends layout
+
+block content
+    .js
+        img.w3-display.left(src='/images/newicon.png' style='height:60px;width:150px;margin-left:50px;position:absolute;')
+        nav
+        
+          ul 
+            
+            li
+              a(href='/') 
+
+                strong HOME 
+            li
+              a(href='/items') 
+                strong EVENTS
+            li
+              a(href='/items/add') 
+                strong ADD EVENT
+            li
+              a(href='/auth/logout')
+                strong LOG OUT
+
+        .content
+          #form._form
+              form(action='/items/add', method='POST')
+                fieldset
+                  legend EVENT NAME:
+                  input(type='text', name='name', placeholder='ex. Sample Event Name')
+                fieldset
+                  legend EVENT PRICE:
+                  input(type='text', name='price', placeholder='ex. Php 700.00')
+                fieldset
+                  legend DESCRIPTION:
+                  textarea(name='description') Write something about the event ...
+                fieldset
+                  legend CATEGORY:
+                  label.input-select
+                    select(name='category')
+                      option(selected='selected') - Select a category-
+                      option(value='Others') Others
+          
+                fieldset
+                  legend IMAGE URL
+                  input(type='text', name='imageUrl1', placeholder='ex. https://s3.postimg.org/fqk6gjdkz/icon1.png')
+                  input(type='text', name='imageUrl2', placeholder='ex. https://s3.postimg.org/fqk6gjdkz/icon2.png')
+                  input(type='text', name='imageUrl3', placeholder='ex. https://s3.postimg.org/fqk6gjdkz/icon3.png')
+                fieldset
+                 
+                    legend PROMOTER'S DETAILS
+                    strong USERNAME 
+                      i.fa.fa-user
+                    input.w3-orange(type='text', name='sellername', value='#{user.username}', readonly)
+                    strong EMAIL 
+                      i.fa.fa-envelope
+                    input.w3-orange(type='text', name='selleremail', value='#{user.email}', readonly)
+                    strong CONTACT NO. 
+                      i.fa.fa-phone
+                    input.w3-orange(type='text', name='sellercontact', value='#{user.contact}', readonly)
+                    input.w3-orange(type='hidden', name='sellerfirst_name', value='#{user.first_name}', readonly)
+                    input.w3-orange(type='hidden', name='sellerlast_name', value='#{user.last_name}', readonly)
+                    input.w3-orange(type='hidden', name='sellerphoto', value='#{user.photo}', readonly)
+                    input.w3-orange(type='hidden', name='sellerschool', value='#{user.school}', readonly)
+                    input.w3-orange(type='hidden', name='sellerfacebook', value='#{user.facebook.profileUrl}', readonly)
+                
+                h2.w3-text-red #{error}
+
+                input(type='submit', name='submit', value='SELL ITEM')
+
+

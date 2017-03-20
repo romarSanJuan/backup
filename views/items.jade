@@ -1,0 +1,55 @@
+extends layout
+
+block content
+    .js
+        img.w3-display.left(src='/images/newicon.png' style='height:60px;width:150px;margin-left:50px;position:absolute;')
+        nav
+        
+          ul 
+            
+            li
+              a(href='/') 
+
+                strong HOME	
+            li
+              a(href='/items') 
+                strong EVENTS
+            li
+              a(href='/items/add') 
+                strong ADD EVENT
+            li
+              a(href='/auth/logout')
+                strong LOG OUT
+       
+        .content
+            
+            form(method= 'post', action= '/items', onsubmit= 'getSearch()')
+                .wrapsearch
+                      .search
+                        input#search.searchTerm(type='search', placeholder='Search Event List!')
+                    //- .input-field
+                    //-   input#search(type='search', placeholder="Find a restaurant")
+                    //-   label(for= 'search')
+                    //-     i.fa.fa-search.small          
+            
+            section.w3-text-black
+              h1 LIST OF EVENTS
+              h2#count.w3-large 
+              strong#findcount.w3-large 
+
+              #table-body.wrapper
+              //- .tbl-header
+              //-   table(cellpadding='0', cellspacing='0', border='0')
+              //-     thead
+              //-       tr
+              //-         th Photo
+              //-         th Item Name
+              //-         th Status
+              //-         th Category
+              //-         th Seller
+              //-         th Price
+              //- .tbl-content
+              //-   table(cellpadding='0', cellspacing='0', border='0')
+              //-     tbody#table-body
+
+            

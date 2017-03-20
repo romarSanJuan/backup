@@ -1,0 +1,54 @@
+extends layout
+
+block content
+    .js
+        img.w3-display.left(src='/images/newicon.png' style='height:60px;width:150px;margin-left:50px;position:absolute;')
+        nav
+        
+          ul 
+            
+            li
+              a(href='/') 
+
+                strong HOME 
+            li
+              a(href='/items') 
+                strong  EVENTS 
+            li
+              a(href='/items/add') 
+                strong ADD EVENT
+            li
+              a(href='/auth/logout')
+                strong LOG OUT
+            
+        
+        .content
+          #form._form
+              form(action='/items/#{edit._id}/edit', method='POST')
+                fieldset
+                  legend EVENT NAME:
+                  input(type='text', name='name', value='#{edit.name}')
+                fieldset
+                  legend EVENT PRICE:
+                  input(type='text', name='price',  value='#{edit.price}')
+                fieldset
+                  legend DESCRIPTION:
+                  textarea(name='description') #{edit.description}
+                fieldset
+                  legend CATEGORY
+                  label.input-select
+                    select(name='category')
+                      option(selected='selected') - Select a category-
+                      option(value='Others') Others
+                fieldset
+                  legend IMAGE URL
+                  input(type='text', name='imageUrl1', placeholder='#{edit.imageUrl1}')
+                  input(type='text', name='imageUrl2', placeholder='#{edit.imageUrl2}')
+                  input(type='text', name='imageUrl3', placeholder='#{edit.imageUrl3}')
+                
+                
+                h2.w3-text-red #{error}
+
+                input(type='submit', name='submit', value='UPDATE ITEM')
+
+
